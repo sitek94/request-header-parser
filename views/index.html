@@ -24,18 +24,27 @@
       <h2>Example Usage</h2>
       <hr />
 
-      <!-- VALID DATE -->
+      <!-- BASE URL -->
       <div class="example">
-        <a href="/api/timestamp/2020-12-30">Valid date</a>
+        Base url: <br />
         <pre class="request">
-          GET https://project-url.com/api/timestamp/2020-12-30
+          https://simple-request-header-parser.herokuapp.com
         </pre>
-        <pre class="json">
+      </div>
+
+      <!-- WHO AM I -->
+      <div class="example">
+        <a href="/api/whoami">Who am I?</a>
+        <pre class="request">
+          GET /api/whoami
+        </pre>
+<pre class="json">
 {
-  "unix": 1609286400000,
-  "utc": "Wed, Dec 30, 2020, 01:00:00 GMT+1"
+  "ipaddress": "159.20.14.100",
+  "language": "en-US,en;q=0.5",
+  "software": "Mozilla/5.0 ( ... ) Gecko/20100101 Firefox/50.0"
 }
-        </pre>
+</pre>
       </div>
     </main>
 
