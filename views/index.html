@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+  <title>Timestamp Microservice</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>
+        <div class="primary">Request Header Parser</div>
+        <div class="secondary">Microservice</div>
+      </h1>
+      <hr />
+    </header>
+
+    <main>
+      <h2>Example Usage</h2>
+      <hr />
+
+      <!-- VALID DATE -->
+      <div class="example">
+        <a href="/api/timestamp/2020-12-30">Valid date</a>
+        <pre class="request">
+          GET https://project-url.com/api/timestamp/2020-12-30
+        </pre>
+        <pre class="json">
+{
+  "unix": 1609286400000,
+  "utc": "Wed, Dec 30, 2020, 01:00:00 GMT+1"
+}
+        </pre>
+      </div>
+    </main>
+
+    <footer>
+      by <a href="https://github.com/sitek94">Maciek Sitkowski</a> 2021
+    </footer>
+  </div>
+</body>
+
+</html>
