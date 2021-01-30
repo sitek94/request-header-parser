@@ -1,0 +1,11 @@
+{
+  "name": "request-header-parser-microservice",
+  "version": "1.0.0",
+  "description": "This project is a part of APIs and Microservices Projects Certification by freeCodeCamp.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maciek Sitkowski",
+  "license": "ISC"
+}
