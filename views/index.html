@@ -11,51 +11,40 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Request Header Parser Microservice</title>
+  <title>Request Header Parser</title>
 </head>
 
 <body>
-  <div class="container">
+  <header>
     <header>
       <h1>
-        <div class="primary">Request Header Parser</div>
-        <div class="secondary">Microservice</div>
+        <span>Request</span><wbr><span class="primary-color">Header</span><wbr><span>Parser</span>
       </h1>
-      <hr />
     </header>
+  </header>
 
-    <main>
-      <h2>Example Usage</h2>
-      <hr />
-
-      <!-- BASE URL -->
-      <div class="example">
-        Base url: <br />
-        <pre class="request">
-          https://simple-request-header-parser.herokuapp.com
+  <main>
+    <section>
+      <h2>Who am I?</h2>
+      <pre>
+        <span class="key">GET</span> /api/whoami
+      </pre>
+      <pre>
+          {
+          &emsp; <span class="key">"ipaddress"</span>: "159.20.14.100",
+          &emsp; <span class="key">"language"</span>: "en-US,en;q=0.5",
+          &emsp; <span class="key">"software"</span>: "Mozilla/5.0 ( ... ) Gecko/20100101 Firefox/50.0"
+          }
         </pre>
-      </div>
+      <form action="api/whoami" method="GET">
+        <button type="submit">Try it</button>
+      </form>
+    </section>
+  </main>
 
-      <!-- WHO AM I -->
-      <div class="example">
-        <a href="/api/whoami">Who am I?</a>
-        <pre class="request">
-          GET /api/whoami
-        </pre>
-        <pre class="json">
-{
-  "ipaddress": "159.20.14.100",
-  "language": "en-US,en;q=0.5",
-  "software": "Mozilla/5.0 ( ... ) Gecko/20100101 Firefox/50.0"
-}
-</pre>
-      </div>
-    </main>
-
-    <footer>
-      by <a href="https://github.com/sitek94">Maciek Sitkowski</a> 2021
-    </footer>
-  </div>
+  <footer>
+    <a href="https://github.com/sitek94">Maciek Sitkowski</a> 2021
+  </footer>
 </body>
 
 </html>
