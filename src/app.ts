@@ -1,4 +1,3 @@
-  
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
@@ -23,9 +22,14 @@ app.get('/', (req, res) => {
 app.get('/api/whoami', (req, res) => {
   res.json({
     ipaddress: req.ip,
-    language: req.headers['user-agent'],
-    software: req.headers['accept-language'],
+    language: req.headers['accept-language'],
+    software: req.headers['user-agent'],
   });
+});
+
+// 404: Not Found
+app.use((req, res) => {
+  res.status(404).sendFile(path.resolve('views/404.html'));
 });
 
 export default app;
