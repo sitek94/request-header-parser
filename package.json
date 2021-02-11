@@ -1,5 +1,5 @@
 {
-  "name": "request-header-parser-microservice",
+  "name": "request-header-parser",
   "version": "1.0.0",
   "description": "A simple microservice that parses the request header and sends back a JSON object.",
   "main": "server.js",
