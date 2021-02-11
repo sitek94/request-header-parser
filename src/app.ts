@@ -27,14 +27,9 @@ app.get('/api/whoami', (req, res) => {
   });
 });
 
-// 404: Not Found route
-app.get('/are-you-lost', (req, res) => {
-  res.status(404).sendFile(path.resolve('views/404.html'));
-});
-
 // Redirect
 app.use((req, res) => {
-  res.status(500).redirect('/are-you-lost');
+  res.status(404).sendFile(path.resolve('views/404.html'));
 });
 
 export default app;
