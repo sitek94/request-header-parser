@@ -17,3 +17,18 @@ and it's a part of APIs and Microservices Certification by [freeCodeCamp].
 [APIs and Microservices Projects - Request Header Parser Microservice]: https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/request-header-parser-microservice
 
 [freeCodeCamp]: https://www.freecodecamp.org/
+
+## Installation
+
+### Install dependencies
+```bash
+$ npm install
+```
+
+### Start the server
+```bash
+$ npm run dev
+```
+
+[APIs and Microservices Projects - Timestamp Microservice]: https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/request-header-parser-microservice
+[freeCodeCamp]: https://www.freecodecamp.org/
